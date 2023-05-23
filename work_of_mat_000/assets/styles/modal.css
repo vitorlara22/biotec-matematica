@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.modalClient {
+  opacity: 0;
+  z-index: -1;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgb(151, 75, 151);
+  width: 45%;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  transition: all 0.5s;
+}
+.modalClient input {
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 90%;
+}
+
+.modalOpen {
+  opacity: 1;
+  z-index: 1;
+}
+
+.signClient {
+  background-color: rgb(151, 75, 151);
+  border: 2px solid rgb(151, 75, 151); 
+  padding: 18px;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: #fff;
+
+  transition: all 0.5s;
+}
+.signClient:hover {
+  background-color: transparent;
+  transform: translate(5px, 5px);
+  color: black;
+}
+
+.buttonForm {
+  background-color: blue;
+  border: 2px solid blue;
+  padding: 14px;
+  font-size: 1.1rem;
+  color: #fff;
+
+  transition: all 0.5s;
+}
+.buttonForm:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.closeButton {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+
+  background-color: transparent;
+  border: 0;
+  font-size: 1.7rem;
+
+  transition: all 0.5s;
+}
+
+.closeButton:hover {
+  color: red;
+}

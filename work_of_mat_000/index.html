@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/modal.css" />
+    <link rel="stylesheet" href="assets/styles/table.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Projeto CRUD Empresarial</title>
+  </head>
+  <body>
+    <header>Os Tralhas</header>
+    <button class="signClient">Cadastrar Cliente</button>
+    <div class="modalClient">
+      <button class="closeButton">X</button>
+      <div>
+        <div class="inputs">
+          <input
+            type="text"
+            name="campodetexto"
+            class="nameClientInput"
+            placeholder="Nome do Cliente"
+          />
+        </div>
+        
+      </div>
+      <div>
+        <div class="inputs">
+          <input
+            type="email"
+            name="campoderelatorio"
+            class="emailClientInput"
+            placeholder="Relatorio"
+          />
+        </div>
+      </div>
+
+      <button class="buttonForm">Cadastrar</button>
+    </div>
+    <div class="container">
+      <table class="containerTable">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Relatorio</th>
+          </tr>
+        </thead>
+        <tbody class="tableUse">
+          <tr class="tableUse">
+            <td>Ricardo</td>
+            <td>Ricardo@gmail.com</td>
+            <td>11 2222 2222</td>
+            <td>Cascavel</td>
+            <td>R$ 1000</td>
+            <button id="buttonDelete" class="material-symbols-outlined">
+              delete
+            </button>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/modal.js"></script>
+  </body>
+</html>
+
+<!-- Neste projeto basicamente, e um gestor empresarial de funcionais e salarios.. -->
+<!-- Onde você coloca se nome, salario, numero de telefone e etc.. usando o local storage.. -->

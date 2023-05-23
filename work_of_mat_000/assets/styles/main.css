@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  height: 100vh;
+
+  font-family: "Roboto", sans-serif;
+
+  background-image: url(../fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+
+  margin-bottom: 30px;
+
+  background-color: rgb(151, 75, 151);
+
+} header > img {
+  width: 10%;
+}
+.line {
+  width: 30%;
+  color: rgba(0, 0, 0, 0.205);
+  height: .1px;
+  margin-bottom: 60px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableUse button {
+  margin-left: 10px;
+  background-color: none;
+  border: none;
+  color: red;
+
+  transition: all 0.4s;
+}
+
+.tableUse button:hover {
+  background-color: rgba(0, 0, 0, 0.198);
+}
+
+@media (max-width: 700px){
+  #buttonDelete {
+    transform: translate(-50px, -50px);
+  }
+  .signClient {
+    margin-bottom: 50px;
+  }
+}
